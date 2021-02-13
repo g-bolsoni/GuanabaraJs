@@ -8,7 +8,7 @@ html, body {
   font-family: 'Oswald',   sans-serif;
 }
 html body {
-    /* background: #2F2F2F; */
+    background: #397FD0;
 }
 p{
     font-family: 'Oswald',   sans-serif;
@@ -20,6 +20,7 @@ h1.titulo {
   flex-direction: column;
   align-items: center;
   margin-top: 1.5rem;
+  color: #FFFFFF;
 }
 
 div.divUser {
@@ -35,6 +36,56 @@ div.divUser {
   padding: 20px 0;
   width: 50%;
 }
+/*----------Config data de nascimento ------------*/
+#inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #inputData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  
+  
+  #labelData {
+    flex-direction: row;
+    margin-right: 1rem;
+  }
+  
+  #dataNascimento {
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px 0.1px rgba(92, 80, 80, 0.836);
+  }
+/*-----x-----Config data de nascimento ------x------*/
+/*----------Config Sexo ------------*/
+
+#inputSexo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #labelSexo {
+    margin-right: 2rem;
+    font-size: 17px;
+  }
+  
+  div div label {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+/*----x------Config Sexo ------x------*/
+  
+  
+
 .imagem{
     font: normal 20pt Arial;
     color: white;
@@ -44,6 +95,7 @@ div.divUser {
     text-align: center;
     border-radius: 50%;
     margin-top: 30px;
+    background-color: aqua;
 }
 body footer p {
     display: flex;
@@ -51,5 +103,6 @@ body footer p {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    font-family: 'Oswald'
+    font-family: 'Oswald';
+    color: #FFFFFF;
 }

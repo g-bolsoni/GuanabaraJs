@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hora do dia</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body id="body">
+
+      <header class="header">
+        <h1 class="titulo" id="titulo">Verificador de Idade</h1>
+      </header>
+
+      <div class="divUser">  
+        <div id="inputs">
+            <!--Qual a idade-->
+            <div id="inputData">
+                <label for="dataNascimento" id="labelData">Ano de Nascimento:</label>
+                <input type="number" name="inputDate" id="dataNascimento" 
+                        autocomplete="true" autofocus required
+                />
+            </div>
+            <div id="inputSexo">
+                <!--Qual o sexo-->
+                <label for=""id="labelSexo">Sexo: </label>
+                <!--Radio Masc-->
+                <input type="radio" name="sexo" id="sexoM" value="masculino" />
+                <label for="sexoM">Masculino</label>
+                
+                <!--Radio Femi-->
+                <input type="radio" name="sexo" id="sexoF" value="feminino" />
+                <label for="sexoF">Feminino</label>
+
+            </div>
+        </div>
+        <button id='btn' onclick="Mensagem()">Verificar</button>
+        <p id="resultado"></p>
+        <div class="imagem" id="img">
+        </div>
+      </div>
+      
+      <footer>
+          <p id="copy">&copy; Giovane</p>
+      </footer>
+    <!-- Optional JavaScript -->
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+  </body>
+</html>

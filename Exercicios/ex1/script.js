@@ -25,7 +25,6 @@ if(tempo <= 6){
 }else if(tempo <= 18){
     Tarde();
     geral.style.background = "#3363aa";
-
 }else if(tempo <= 24){
     Noite();
     geral.style.background = "#2F2F2F";
