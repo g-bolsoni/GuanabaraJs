@@ -57,5 +57,71 @@ function Mensagem(){
     return false;
   }
   resu.innerHTML = `Seu sexo é ${sexo}, e tem ${idade} anos`
+  ExibeImagem()
 }
 //-------x--------RETORNAR A MENSAGEM -------x----------
+//----------------MOSTRAR A IMAGEM-----------------------
+function ExibeImagem(){
+  let imagem = document.getElementById('img');
+  let sexo = SexoType();
+  
+
+  let idade = calcularIdade()
+  if( sexo== 'masculino'){
+    console.log('Funcionou Masculino')
+    if(idade<=0){
+      alert('Data inválida! \nTente novamente')
+    }else
+    if(idade<=10 ){ 
+      tela()
+      imagem.style.background = "url('https://i.pinimg.com/originals/f7/df/be/f7dfbe487fee7bf7bc86546f2872d60f.jpg')"
+      imagem.style.backgroundSize = '200px 300px';  
+    }else
+    if(idade<=20){
+      alert('Funcionou adolecente')
+    }else
+    if(idade<=65){
+      alert('Funcionou adulto')
+    }else
+    if(idade<=70){
+      alert('Funcionou pré-idoso')
+    }else
+    if(idade<=100){
+      alert('Funcionou idoso')
+    }else
+    if(idade>100){
+      alert('ERROR \n VERFIQUE OS DADOS E TENTE NOVAMENTE')
+    }
+  
+  }
+  
+  if(sexo == 'feminino'){
+    console.log('Funcionou Feminino')
+    if(idade<=0){
+      alert('Data inválida! \nTente novamente')
+    }else
+    if(idade<=10 ){
+      alert('Funcionou criança')
+    }else
+    if(idade<=20){
+      alert('Funcionou adolecente')
+    }else
+    if(idade<=65){
+      alert('Funcionou adulta')
+    }else
+    if(idade<=80){
+      alert('Funcionou pré-idosa')
+    }else
+    if(idade<=100){
+      alert('Funcionou idosa')
+    }else
+    if(idade>100){
+      alert('ERROR \n VERFIQUE OS DADOS E TENTE NOVAMENTE')
+    }
+  
+  }
+ 
+}
+
+
+//-------x--------MOSTRAR A IMAGEM-----------x-----------
